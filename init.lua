@@ -23,7 +23,7 @@ function sapling_spawn.spawn_saplings(pos, node)
 	
 	-- Block above needs to be air.
 	local above = {x = pos.x, y = pos.y + 1, z = pos.z}
-	if not core.get_node(above).name == "air" then
+	if core.get_node(above).name ~= "air" then
 		return
 	end
 	
@@ -49,12 +49,12 @@ function sapling_spawn.spawn_saplings(pos, node)
 	local pos1 = {x = pos.x + 9, y = pos.y + 3, z = pos.z + 9}
 	-- Observe a maximum density of trees.
 	-- In the volume defined, there are 2527 blocks. 500 is approximately 20% of that space. 100 is 3-4%.
-	if #core.find_nodes_in_area(pos0, pos1, {"group:tree"}) >= 100 then
+	if #core.find_nodes_in_area(pos0, pos1, {"group:tree"}) >= 180 then
 		return
 	end
 	
 	-- Observe a maximum density of saplings.
-	if #core.find_nodes_in_area(pos0, pos1, {"group:sapling"}) >= 1 then
+	if #core.find_nodes_in_area(pos0, pos1, {"group:sapling"}) >= 2 then
 		return
 	end
 	
