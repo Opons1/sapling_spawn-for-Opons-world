@@ -23,9 +23,11 @@ function sapling_spawn.spawn_saplings(pos, node)
 	
 	-- Block above needs to be air.
 	local above = {x = pos.x, y = pos.y + 1, z = pos.z}
-	if core.get_node(above).name ~= "air" then
-		return
-	end
+    local name = core.get_node(above).name
+
+    if name ~= "air" and name ~= "default:snow" then
+	    return
+    end
 	
 	-- The block cannot be underwater.
 	if core.get_node(above).name == "default:water_source" or core.get_node(above).name == "default:river_water_source" then
