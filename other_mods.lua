@@ -31,6 +31,10 @@ end
 if mod_loaded('chestnuttree') then 
 	sapling_ref["chestnuttree:trunk"] = "chestnuttree:sapling"
 end
+--ebony
+if mod_loaded('ebony') then 
+	sapling_ref["ebony:trunk"] = "ebony:sapling"
+end
 -- Default
 if mod_loaded('default') then
 	sapling_ref["default:tree"] = "default:sapling"
@@ -120,6 +124,7 @@ if mod_loaded('moretrees') then
 	sapling_ref["moretrees:fir_trunk"] = "moretrees:fir_sapling"
 	sapling_ref["moretrees:jungletree_trunk"] = "moretrees:jungletree_sapling"
 end
+
 
 
 
