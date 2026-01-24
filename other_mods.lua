@@ -39,6 +39,10 @@ end
 if mod_loaded('hollytree') then 
 	sapling_ref["hollytree:trunk"] = "hollytree:sapling"
 end
+--jacaranda
+if mod_loaded('jacaranda') then 
+	sapling_ref["jacaranda:trunk"] = "jacaranda:sapling"
+end
 
 -- Default
 if mod_loaded('default') then
@@ -129,6 +133,7 @@ if mod_loaded('moretrees') then
 	sapling_ref["moretrees:fir_trunk"] = "moretrees:fir_sapling"
 	sapling_ref["moretrees:jungletree_trunk"] = "moretrees:jungletree_sapling"
 end
+
 
 
 
