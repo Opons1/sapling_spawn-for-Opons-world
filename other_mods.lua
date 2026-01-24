@@ -22,7 +22,6 @@ end
 if mod_loaded('birch') then 
 	sapling_ref["birch:trunk"] = "birch:sapling"
 end
-end
 --cherrytree
 if mod_loaded('cherrytree') then 
 	sapling_ref["cherrytree:trunk"] = "cherrytree:sapling"
@@ -68,12 +67,12 @@ if mod_loaded('palm') then
 	sapling_ref["palm:trunk"] = "palm:sapling"
 end
 --pomegranate
-if mod_loaded(pomegranate') then 
+if mod_loaded('pomegranate') then 
 	sapling_ref["pomegranate:trunk"] = "pomegranate:sapling"
 end
 --plumtree
 if mod_loaded('plumtree') then 
-	sapling_ref["plumytree:trunk"] = "plumtree:sapling"
+	sapling_ref["plumtree:trunk"] = "plumtree:sapling"
 end
 --willow
 if mod_loaded('willow') then 
@@ -186,6 +185,7 @@ if mod_loaded('moretrees') then
 	sapling_ref["moretrees:fir_trunk"] = "moretrees:fir_sapling"
 	sapling_ref["moretrees:jungletree_trunk"] = "moretrees:jungletree_sapling"
 end
+
 
 
 
