@@ -9,7 +9,15 @@ function mod_loaded(str)
 		return false
 	end
 end
-
+--Industrialtest
+if mod_loaded('industrialtest') then
+	sapling_ref["industrialtest:rubber_wood"] = "industrialtest:rubber_sapling"
+	sapling_ref["industrialtest:rubber_wood_with_rubber"] = "industrialtest:rubber_sapling"
+end
+--baldcypress
+if mod_loaded('baldcypress') then 
+	sapling_ref["baldcypress:trunk"] = "baldcypress:sapling"
+end
 
 -- Default
 if mod_loaded('default') then
@@ -100,3 +108,4 @@ if mod_loaded('moretrees') then
 	sapling_ref["moretrees:fir_trunk"] = "moretrees:fir_sapling"
 	sapling_ref["moretrees:jungletree_trunk"] = "moretrees:jungletree_sapling"
 end
+
