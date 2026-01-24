@@ -58,6 +58,14 @@ end
 --maple
 if mod_loaded('maple') then 
 	sapling_ref["maple:trunk"] = "maple:sapling"
+end 
+--oak
+if mod_loaded('oak') then 
+	sapling_ref["oak:trunk"] = "oak:sapling"
+end
+--palm
+if mod_loaded('palm') then 
+	sapling_ref["palm:trunk"] = "palm:sapling"
 end
 
 --naturalbiomes
@@ -166,6 +174,7 @@ if mod_loaded('moretrees') then
 	sapling_ref["moretrees:fir_trunk"] = "moretrees:fir_sapling"
 	sapling_ref["moretrees:jungletree_trunk"] = "moretrees:jungletree_sapling"
 end
+
 
 
 
