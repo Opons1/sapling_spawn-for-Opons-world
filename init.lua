@@ -76,7 +76,7 @@ core.register_abm({
 	nodenames = {"group:soil"},
 	neighbors = {"group:soil"},
 	without_neighbors = {"group:tree"},
-	interval = 240,
+	interval = 120,
 	chance = 2048,
 	action = function(...)
 		sapling_spawn.spawn_saplings(...)
