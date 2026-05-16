@@ -51,12 +51,12 @@ function sapling_spawn.spawn_saplings(pos, node)
 	local pos1 = {x = pos.x + 9, y = pos.y + 3, z = pos.z + 9}
 	-- Observe a maximum density of trees.
 	-- In the volume defined, there are 2527 blocks. 500 is approximately 20% of that space. 100 is 3-4%.
-	if #core.find_nodes_in_area(pos0, pos1, {"group:tree"}) >= 180 then
+	if #core.find_nodes_in_area(pos0, pos1, {"group:tree"}) >= 250 then
 		return
 	end
 	
 	-- Observe a maximum density of saplings.
-	if #core.find_nodes_in_area(pos0, pos1, {"group:sapling"}) >= 2 then
+	if #core.find_nodes_in_area(pos0, pos1, {"group:sapling"}) >= 3 then
 		return
 	end
 	
@@ -76,8 +76,8 @@ core.register_abm({
 	nodenames = {"group:soil"},
 	neighbors = {"group:soil"},
 	without_neighbors = {"group:tree"},
-	interval = 120,
-	chance = 2048,
+	interval = 240,
+	chance = 4000,
 	action = function(...)
 		sapling_spawn.spawn_saplings(...)
 	end,
