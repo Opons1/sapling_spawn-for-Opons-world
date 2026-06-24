@@ -12,6 +12,8 @@ sapling_ref = {}
 -- Load support for other mods' trees
 local modpath = core.get_modpath("sapling_spawn")
 dofile(modpath.."/other_mods.lua")
+-- Sapling repellant
+dofile(modpath.."/nodes.lua")
 
 
 -- Spawn saplings
@@ -40,9 +42,9 @@ function sapling_spawn.spawn_saplings(pos, node)
 		return
 	end
 	
-	-- There must be tree nearby.
+	-- There must be tree nearby and no repellant nearby
 	local proximity = 15
-	if not core.find_node_near(pos, proximity, {"group:tree"}) then
+	if not core.find_node_near(pos, proximity, {"group:tree"}) or core.find_node_near(pos, proximity, {"group:tree_repellant"}) then
 		return
 	end
 	
